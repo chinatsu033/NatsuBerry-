@@ -6,65 +6,85 @@
   <title>NatsuBerry</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <main class="app">
-    <section class="hero">
-      <div class="hero-overlay">
-        <button class="menu-btn">☰</button>
-        <div class="top-actions">
-          <button>🔔</button>
-          <button>🔍</button>
-          <button>＋</button>
+  <main class="page">
+
+    <section class="title-card">
+      <div class="corner-dot"></div>
+      <h1>草莓 & 小眠</h1>
+      <p>NatsuBerry Shared Calendar</p>
+      <div class="emoji-buttons">
+        <button>👋</button>
+        <button>⚙️</button>
+      </div>
+    </section>
+
+    <section class="countdown-card">
+      <h2>在一起已经</h2>
+      <div class="countdown">
+        <div>
+          <strong id="days">13</strong>
+          <span>天</span>
+        </div>
+        <div>
+          <strong id="hours">12</strong>
+          <span>时</span>
+        </div>
+        <div>
+          <strong id="minutes">14</strong>
+          <span>分</span>
+        </div>
+        <div>
+          <strong id="seconds">21</strong>
+          <span>秒</span>
         </div>
       </div>
     </section>
 
-    <section class="content">
-      <div class="quick-actions">
-        <button>
-          <span>＋</span>
-          Add Event
-        </button>
-        <button>
-          <span>▦</span>
-          Calendar
-        </button>
-        <button>
-          <span>☰</span>
-          List
-        </button>
+    <section class="menu-card">
+      <button>＋ Add Event</button>
+      <button>▦ Calendar</button>
+      <button>☰ List</button>
+    </section>
+
+    <section class="schedule-card">
+      <div class="section-title">
+        <h2>Today</h2>
+        <span id="today-date">June 2</span>
       </div>
 
-      <header class="today-header">
-        <h1 id="today-title">Today</h1>
-      </header>
-
-      <section class="schedule">
-        <div class="time-row">
-          <div class="time">
-            <strong>13:00</strong>
-            <span>1h 30m</span>
-          </div>
-
-          <div class="event event-user-a">
-            <strong>P3 Exam</strong>
-            <span>Created by Chinatsu</span>
-          </div>
+      <div class="event pink">
+        <div class="time">13:00</div>
+        <div>
+          <strong>P3 Exam</strong>
+          <p>Created by Chinatsu</p>
         </div>
+      </div>
 
-        <div class="time-row">
-          <div class="time">
-            <strong>16:30</strong>
-            <span>45m</span>
-          </div>
-
-          <div class="event event-user-b">
-            <strong>Study Plan</strong>
-            <span>Created by Strawberry</span>
-          </div>
+      <div class="event blue">
+        <div class="time">16:30</div>
+        <div>
+          <strong>Study Plan</strong>
+          <p>Created by Strawberry</p>
         </div>
-      </section>
+      </div>
     </section>
+
+    <section class="upcoming-card">
+      <h2>Upcoming Events 🏆</h2>
+
+      <div class="small-event">
+        <span>🍓</span>
+        <p>Anniversary</p>
+      </div>
+
+      <div class="small-event">
+        <span>🎂</span>
+        <p>Birthday</p>
+      </div>
+    </section>
+
   </main>
 
   <script src="script.js"></script>
