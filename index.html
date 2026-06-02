@@ -18,13 +18,21 @@
       </div>
     </header>
 
-    <section class="photo-card">
-      <div class="photo-placeholder">
-        <div class="plus">＋</div>
-        <strong>上传照片</strong>
-        <p>在这里展示你们的照片吧</p>
-      </div>
-    </section>
+    <section class="photo-card" id="photo-card">
+  <input type="file" id="photo-input" accept="image/*" hidden />
+
+  <div class="photo-placeholder" id="photo-placeholder">
+    <div class="plus">＋</div>
+    <strong>上传照片</strong>
+    <p>在这里展示你们的照片吧</p>
+  </div>
+
+  <img id="photo-preview"
+     class="photo-preview"
+     alt="Uploaded photo"
+     hidden />
+
+</section>
 
     <section class="action-grid">
       <button class="action add">
