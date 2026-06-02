@@ -332,4 +332,16 @@ button {
     left: 28px;
     font-size: 18px;
   }
+
+  .photo-card {
+  cursor: pointer;
+  }
+
+.photo-preview {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+  }
 }
