@@ -13,24 +13,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const photoPreview = document.getElementById("photo-preview");
   const uploadPhotoBtn = document.getElementById("upload-photo-btn");
 
-  if (uploadPhotoBtn && photoInput) {
-    uploadPhotoBtn.addEventListener("click", () => {
-      photoInput.click();
-    });
-  }
+  uploadPhotoBtn.addEventListener("click", () => {
+    photoInput.click();
+  });
 
-  if (photoInput && photoPlaceholder && photoPreview) {
-    photoInput.addEventListener("change", () => {
-      const file = photoInput.files[0];
-      if (!file) return;
+  photoInput.addEventListener("change", () => {
+    const file = photoInput.files[0];
+    if (!file) return;
 
-      const imageUrl = URL.createObjectURL(file);
+    const imageUrl = URL.createObjectURL(file);
 
-      photoPreview.src = imageUrl;
-      photoPreview.hidden = false;
-      photoPlaceholder.hidden = true;
-    });
-  }
+    photoPreview.src = imageUrl;
+    photoPreview.hidden = false;
+    photoPlaceholder.hidden = true;
+  });
 
   console.log("NatsuBerry Loaded");
 });
